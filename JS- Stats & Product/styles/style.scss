@@ -1,0 +1,85 @@
+@use "./utils/variable" as variable;
+@use "./utils/mixin.scss" as mixin;
+
+
+body {
+    background-color: black;
+}
+
+#stats {
+    #root {
+        .container {
+
+            h1 {
+                @include mixin.header;
+            }
+
+            .stats-box {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                .stats {
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                    background-color: variable.$boxesColor;
+                    width: 25%;
+                    height: 200px;
+                    text-align: center;
+                    border-radius: 30px;
+
+                    p {
+                        font-size: 20px;
+                        color: variable.$greyColor;
+                    }
+
+                    h1 {
+                        padding: 10px;
+                        font-size: 35px;
+                        color: variable.$whiteColor;
+                    }
+
+                    .green {
+                        color: variable.$greenColor;
+                    }
+
+                    .red {
+                        color: variable.$redColor;
+                    }
+                }
+            }
+
+            .products {
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+                .item {
+                    @include mixin.wallpaper-ios;
+                    margin-bottom: 2%;
+
+                    h1 {
+                        @include mixin.header;
+                    }
+
+                    img {
+                        @include mixin.image;
+                    }
+
+                    .wallpaper-list {
+                        @include mixin.list;
+
+                        ul {
+                            display: flex;
+
+                            li {
+                                @include mixin.ulLi;
+
+                                b {
+                                    color: variable.$whiteColor;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+@mixin image {
+    width: 26.5%;
+    height: 300px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+@mixin ulLi {
+    margin-left: 50%;
+    color: grey;
+    list-style: none;
+}
+
+@mixin wallpaper-ios {
+    position: relative;
+    display: flex;
+    background-color: rgb(28, 25, 25);
+    border-radius: 30px;
+}
+
+@mixin list {
+    position: absolute;
+    top: 60%;
+    left: 22%;
+}
+
+@mixin header {
+    margin-left: 2%;
+    color: white;
+    font-size: 25px;
+}

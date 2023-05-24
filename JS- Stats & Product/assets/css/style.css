@@ -1,0 +1,74 @@
+body {
+  background-color: black;
+}
+
+#stats #root .container h1 {
+  margin-left: 2%;
+  color: white;
+  font-size: 25px;
+}
+#stats #root .container .stats-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#stats #root .container .stats-box .stats {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: rgb(28, 25, 25);
+  width: 25%;
+  height: 200px;
+  text-align: center;
+  border-radius: 30px;
+}
+#stats #root .container .stats-box .stats p {
+  font-size: 20px;
+  color: rgb(199, 192, 192);
+}
+#stats #root .container .stats-box .stats h1 {
+  padding: 10px;
+  font-size: 35px;
+  color: white;
+}
+#stats #root .container .stats-box .stats .green {
+  color: green;
+}
+#stats #root .container .stats-box .stats .red {
+  color: red;
+}
+#stats #root .container .products {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#stats #root .container .products .item {
+  position: relative;
+  display: flex;
+  background-color: rgb(28, 25, 25);
+  border-radius: 30px;
+  margin-bottom: 2%;
+}
+#stats #root .container .products .item h1 {
+  margin-left: 2%;
+  color: white;
+  font-size: 25px;
+}
+#stats #root .container .products .item img {
+  width: 26.5%;
+  height: 300px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+#stats #root .container .products .item .wallpaper-list {
+  position: absolute;
+  top: 60%;
+  left: 22%;
+}
+#stats #root .container .products .item .wallpaper-list ul {
+  display: flex;
+}
+#stats #root .container .products .item .wallpaper-list ul li {
+  margin-left: 50%;
+  color: grey;
+  list-style: none;
+}
+#stats #root .container .products .item .wallpaper-list ul li b {
+  color: white;
+}/*# sourceMappingURL=style.css.map */
